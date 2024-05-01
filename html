@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great minds in tech foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script defer src="https://js.paystack.co/v1/inline.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.jpg" alt="great minds logo"/>
+            <p>Great minds tech foundation</p>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 data-aos="flip-right">GREAT MINDS IN TECH<br/> CONFERENCE 2023</h1>
+            <h2>Shaping The Future Together With The Power Of Technology</h2>
+            <p>"Join Us in Making a Difference: Support Our Conference and Foster Positive Change!”</p>
+            <a href=""  target="_blank">Support us</a>
+        </section>
+        <section class="context" >
+            <div class="content">
+                <div class="first t">
+                    <div class="location1 flexed" data-aos="fade-left" duration="300">
+                        <img src="./images/Group 2.jpg" alt="location"/>
+                        <p>2ND FLOOR, ISOKEN PLAZA, OFF ENERHEN JUNTION, WARRI, DELTA STATE,NIGERIA.33221</p>
+                    </div>
+                    <div class="location2 flexed" data-aos="fade-right" duration="300">
+                        <img src="./images/Group 3.jpg" alt="date"/>
+                        <p>SATURDAY, 25TH NOVEMBER, 2023 10:00AM</p>
+                    </div>
+                    <h2>For More Details</h2>
+                    <div class="location3 flexed" data-aos="fade-left" duration="300">
+                        <img src="./images/Group 4.jpg" alt="mail"/>
+                        <p>Send us an email at: techjuniorfoundation@gmail.com</p>
+                    </div>
+                    <div class="location4 flexed" data-aos="fade-right" duration="300">
+                        <img src="./images/Group 5.jpg" alt="call"/>
+                        <p>Call us +2348146883918 </p>
+                    </div><h1>+</h1>
+                </div>
+                <div class="second t">
+                    <div class="ticket" data-aos="fade-down" duration="300">
+                        <h3>Ticket: $0</h3>
+                        <p>Includes</p>
+                        <ul>
+                            <li>Refreshment</li>
+                            <li>Swags</li>
+                            <li>Speed build challenge</li>
+                            <li>Entertainment</li>
+                        </ul>
+                        <div class="follow">
+                            <p>Follow us on <strong>X</strong>:</p>
+                            <p><strong>@TechJuniorFound</strong></p>
+                        </div>
+                    </div>
+                    <div class="speaker" data-aos="fade-up" duration="300">
+                        <h3>Speakers:</h3>
+                        <ul>
+                            <li>Mr Onose Ogaga, Founder - WittyHub, Effurun.</li>
+                            <li>Mr Jether Ashiegbu C.E.O Logic Prime Solutions Ltd Forex trader .</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="shell">
+        <form id="paymentForm">
+            <div>
+                <ion-icon name="close" id="close"></ion-icon>
+                <!-- <p>Close</p> -->
+              </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email-address" required />
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="tel" id="amount" required />
+            </div>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
+            <div class="form-submit">
+              <button type="submit" onclick="payWithPaystack()"> Pay with paystack </button>
+            </div>
+          </form>
+          
+    </section>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

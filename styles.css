@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}    
+
+body{
+    width:100vw;
+    max-width: 1223px;
+    margin:auto;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    padding-left: 100px;
+    overflow-y: visible;
+    position: relative;
+    background-color: #d39f9f;
+}
+
+main{
+    background-color: #f8f4f4;
+}
+
+header div{
+    width: 100px;
+    height: 170px;
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    gap: 2px;
+    position: absolute;
+}
+
+header div img{
+    width: 60px;
+    height:60px;
+}
+
+.hero{
+    width: 100%;
+    height: 93vh;
+    background: url("./images/Rectangle\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    padding-left: clamp(0px,5vw,150px);
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: clamp(30px, 5vw, 70px);
+    color: #fff;
+    border-right: 3px solid rgb(243, 247, 16);
+    border-left: 3px solid rgb(240, 240, 13);
+    width: fit-content;
+    padding: 2px;
+}
+
+.hero h2{
+    font-size: clamp(10px, 5vw, 30px);
+    margin-top: 123px;
+    color: rgb(237, 255, 245);
+}
+
+.hero p{
+    color:white;
+    font-weight:600;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.hero a{
+    background-color: rgba(0, 0, 0, 0.747);
+    color:white;
+    height: 3rem; 
+    width: 7rem;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration:none;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.context{
+    margin-top: 40px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+}
+
+.content{
+    width: 85%;
+    height: 95%;
+    display: flex;
+}
+
+.t{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: 'Inter', sans-serif;
+}
+
+.t:first-child{
+    border-right:2px solid rgb(10, 10, 10);
+
+}
+
+.t h2{
+    color: #e71919;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 139.523%;
+letter-spacing: 0.7px;
+}
+
+.flexed{
+    width:10%;
+    height: 7rem;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexed img{
+    height: 8rem;
+    width:8rem;
+}
+
+.flexed p{
+    max-width:200px !important;
+    font-weight: 600;
+    font-size: clamp(10px,1vw,15px);
+}
+.second{
+    padding: 30px;
+    padding-top: 20px;
+    
+}
+.ticket{
+    width: 100%;
+    height: 60%;
+    border-bottom:2px solid rgb(8, 8, 8);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.ticket ul{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.follow{
+    margin-left: 40px;
+    margin-top: 30px
+}
+
+.speaker{
+    width: 100%;
+    height:40%;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.speaker ul{
+    max-width: 200px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shell{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 9999;
+    display:flex;
+    background-color: rgba(240, 244, 247, 0.829);
+    justify-content: center;
+    align-items:center;
+    display:none;
+}
+
+#paymentForm{
+    height: 70%;
+    width: clamp(290px, 50vw, 400px);
+    border-radius:10px;
+    background-color: rgb(235, 221, 221);
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#paymentForm button{
+    height: 3rem;
+    background:#000;
+    color:rgb(250, 244, 244);
+}
+
+#paymentForm div:first-child{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+}
+
+#paymentForm div{
+    width:90%;
+    margin:0 auto;
+    height:5rem;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#paymentForm div input{
+    width:100%;
+    height:3rem;
+    border:1px solid #ccc;
+    outline:none;
+    border-radius:10px;
+    padding-left:4px;
+}
+
+.close{
+    padding:2px;
+    background:white;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px)
+{
+    header{
+        width: 100%;
+        height: 1vh;
+        padding-left: 100px;
+        overflow-y: visible;
+        position: relative;
+        background-color: #9c5e5e;
+    }
+    .context{
+        margin-top: 40px;
+        height: 100vh;
+        background-color: rgb(255, 253, 253);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border:none;
+        overflow: hidden;
+    }
+    .content{
+        width: 80%;
+        height: 90%;
+        display: flex;
+    }
+    .t{
+        width:500%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-family: 'Inter', sans-serif;
+    }
+    .flexed{
+        width:10%;
+        height: 7rem;
+        display:flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .flexed img{
+        height: 2rem;
+        width:2rem;
+    }
+    .flexed p{
+        max-width:400px !important;
+        font-weight: 1;
+        font-size: clamp(10px,1vw,15px);
+    }
+    .second{
+        padding: 30px;
+        padding-top: 20px;
+        
+    }
+    .ticket{
+        width: 100%;
+        height: 36%;
+        border-bottom:2px solid rgb(3, 3, 3);
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .ticket ul{
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 10;
+        height: 20rem;
+    }
+    .follow{
+        margin-left: 1px;
+        margin-top: 3px
+    }
+}

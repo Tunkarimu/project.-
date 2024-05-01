@@ -1,0 +1,21 @@
+@media screen and (max-width:800px){
+    body{
+        width:100vw;
+    }
+    .context{
+        height:fit-content;
+    }
+
+    .content{
+        height:fit-content;
+        flex-direction: column;
+    }
+
+    .t{
+        width:100%;
+    }
+
+    .t:first-Child{
+        border-right:none;
+    }
+}
